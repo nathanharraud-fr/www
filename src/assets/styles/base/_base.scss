@@ -4,8 +4,15 @@
 ////
 
 :root {
+  /* CONSTANTS */
+  --body-max-width: 1200px;
+  --header-height: 80px;
+  --primary: #ea2027;
+
+  /* VARIABLES */
   --body-background-color: white;
   --body-color: #2c3e50;
+  --body-link-hover: #ea2027;
 }
 
 body.theme--dark {
@@ -16,4 +23,7 @@ body.theme--dark {
 body {
   background-color: var(--body-background-color);
   color: var(--body-color);
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

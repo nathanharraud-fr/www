@@ -8,3 +8,14 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: currentColor;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:visited {
+    color: var(--primary);
+  }
+}

@@ -8,8 +8,6 @@ import { useStore } from 'vuex';
 function onThemeUpdate(newValue, oldValue = undefined) {
   const $body = document.getElementsByTagName('body')[0];
 
-  console.log(newValue, oldValue);
-
   $body.classList.add(`theme--${newValue}`);
   $body.classList.remove(`theme--${oldValue}`);
 }
