@@ -17,6 +17,11 @@ const routes = [
     name: 'Services',
     component: () => import(/* webpackChunkName: "services" */ '../views/Services.vue'),
   },
+  {
+    path: '/:catchall(.*)',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "not-found" */ '../views/NotFound.vue'),
+  },
 ];
 
 const router = createRouter({
