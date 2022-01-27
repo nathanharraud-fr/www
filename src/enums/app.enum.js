@@ -1,6 +1,6 @@
 const AppTheme = {
-  Light: 'light-theme',
-  Dark: 'dark-theme',
+  Light: 'light',
+  Dark: 'dark',
 };
 
 export default AppTheme;
