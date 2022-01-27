@@ -1,0 +1,19 @@
+////
+/// @group base/base
+/// @author nathanharraud
+////
+
+:root {
+  --body-background-color: white;
+  --body-color: #2c3e50;
+}
+
+body.theme--dark {
+  --body-background-color: #191313;
+  --body-color: white;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+}
