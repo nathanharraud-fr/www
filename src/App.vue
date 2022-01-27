@@ -1,7 +1,11 @@
 <script>
+import TheHeader from './components/TheHeader.vue';
 import updateBodyOnThemeUpdate from './composables/updateBodyOnThemeUpdate';
 
 export default {
+  components: {
+    TheHeader,
+  },
   setup() {
     updateBodyOnThemeUpdate();
   },
@@ -9,10 +13,6 @@ export default {
 </script>
 
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <button @click="$store.commit('toggleTheme')">Theme</button>
-  </div>
+  <TheHeader/>
   <router-view/>
 </template>
